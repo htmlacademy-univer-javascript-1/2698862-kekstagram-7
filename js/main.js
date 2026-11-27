@@ -1,5 +1,6 @@
-import { generatePhotos } from './photo.js';
+import { createPhotos } from './data.js'; // Имя функции и файла могут отличаться в вашем проекте
+import { renderThumbnails } from './thumbnails.js';
 
-const photos = generatePhotos();
+const photos = createPhotos();
 
-export { photos };
+renderThumbnails(photos);
